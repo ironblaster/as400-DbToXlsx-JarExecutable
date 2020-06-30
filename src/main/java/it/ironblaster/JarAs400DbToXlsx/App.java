@@ -22,16 +22,17 @@ public class App
     public static void main( String[] args )
     {
     	//http://localhost:8080/as400-DbToXlsx/?&ip=10.5.26.95&user=SPROJECT&pass=SPROJECT&struttura=SPROJECT.ACS9170FST&file=SPROJECT.ACS9170F
-    			String ip = args[0];
+    			String ip = args[0].trim();
     			
-    			String user = args[1];
+    			String user = args[1].trim();
     			
-    			String pass = args[2];
+    			String pass = args[2].trim();
     			
-    			String struttura = args[3];
+    			String struttura = args[3].trim();
     				
-    			String file = args[4];
-    			
+    			String file = args[4].trim();
+
+    			String nome = args[5].trim();
     			
     			try {
     				String path = App.class.getProtectionDomain().getCodeSource().getLocation().getPath();
